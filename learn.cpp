@@ -1,4 +1,14 @@
 #include <iostream>
+
+int main() {
+    auto result = (10 <=> 20) > 0;
+    std::cout << result << std::endl;
+}
+
+
+// Old code for references
+/*
+#include <iostream>
 #include <cmath>
 using namespace std;
 
@@ -12,3 +22,4 @@ int main() {
     cout << "End " << *pX - b;
     return 0;
 }
+*/
