@@ -1,12 +1,19 @@
 // Learning c++ from basics
 #include <iostream>
 
-int main() {
-    // This will print hello world
-    std::cout << "Hello! World" << std::endl;
-    /*
-    This is amulti line comment in c++
-    The line  return 0; indicates the program has ended successfully.
-    */
+int addNumbers(int a, int b) {
+    int sum = a + b;
+    return sum;
+}
+
+int main(int argc, char **argv) {
+    int num1 {9};
+    int num2 {3};
+    int sum = num1 + num2;
+    int a = addNumbers(num1, num2);
+    std::cout << a << std::endl;
+    a = addNumbers(1, 2);
+    std::cout << a;
+    // std::cout << "The sum of " << num1 << " and " << num2 << " is " << sum <<std::endl;
     return 0;
 }
